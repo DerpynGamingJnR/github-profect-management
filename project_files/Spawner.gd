@@ -2,7 +2,7 @@ extends Node2D
 
 @export var obstacle_scene: PackedScene
 
-var random_obstacle = ["res://obstacle.tscn", "res://obstacle 2.tscn", "res://obstacle 3.tscn"]
+var random_obstacle = [load("res://obstacle.tscn"), load("res://obstacle 2.tscn"), load("res://obstacle 3.tscn")]
 
 var obstacle_list
 

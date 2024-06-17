@@ -25,21 +25,15 @@ offset_bottom = 10.0
 [node name="CharacterBody2D2" parent="." instance=ExtResource("1_t6fpy")]
 position = Vector2(64, 373)
 
-[node name="Area2D" parent="." instance=ExtResource("2_4ll0g")]
-position = Vector2(646, 438)
-
-[node name="Area2D2" parent="." instance=ExtResource("2_4ll0g")]
-position = Vector2(322, 439)
-
-[node name="Area2D5" parent="." instance=ExtResource("2_4ll0g")]
-position = Vector2(949, 439)
-
 [node name="Node2D" type="Node2D" parent="."]
 script = ExtResource("3_c4y4e")
 obstacle_scene = ExtResource("2_4ll0g")
 
 [node name="ObstacleSpawn" type="Node2D" parent="Node2D" groups=["obstacle"]]
-position = Vector2(408, 339)
+position = Vector2(646, 439)
 
 [node name="ObstacleSpawn2" type="Node2D" parent="Node2D" groups=["obstacle"]]
-position = Vector2(857, 405)
+position = Vector2(949, 439)
+
+[node name="ObstacleSpawn3" type="Node2D" parent="Node2D" groups=["obstacle"]]
+position = Vector2(323, 439)
