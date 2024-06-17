@@ -1,0 +1,45 @@
+[gd_scene load_steps=5 format=3 uid="uid://bposxmdmkfxfo"]
+
+[ext_resource type="PackedScene" uid="uid://cxvcpcs3bfhy3" path="res://player_scene.tscn" id="1_t6fpy"]
+[ext_resource type="PackedScene" uid="uid://boxjsjav1ffw0" path="res://obstacle.tscn" id="2_4ll0g"]
+[ext_resource type="Script" path="res://Spawner.gd" id="3_c4y4e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nie2f"]
+size = Vector2(1153, 20)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(436, 461)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(139.5, 0)
+shape = SubResource("RectangleShape2D_nie2f")
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D"]
+offset_left = -575.0
+offset_top = -10.0
+offset_right = 576.0
+offset_bottom = 10.0
+
+[node name="CharacterBody2D2" parent="." instance=ExtResource("1_t6fpy")]
+position = Vector2(64, 373)
+
+[node name="Area2D" parent="." instance=ExtResource("2_4ll0g")]
+position = Vector2(646, 438)
+
+[node name="Area2D2" parent="." instance=ExtResource("2_4ll0g")]
+position = Vector2(322, 439)
+
+[node name="Area2D5" parent="." instance=ExtResource("2_4ll0g")]
+position = Vector2(949, 439)
+
+[node name="Node2D" type="Node2D" parent="."]
+script = ExtResource("3_c4y4e")
+obstacle_scene = ExtResource("2_4ll0g")
+
+[node name="ObstacleSpawn" type="Node2D" parent="Node2D" groups=["obstacle"]]
+position = Vector2(408, 339)
+
+[node name="ObstacleSpawn2" type="Node2D" parent="Node2D" groups=["obstacle"]]
+position = Vector2(857, 405)
