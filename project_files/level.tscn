@@ -5,7 +5,7 @@
 [ext_resource type="Script" path="res://Spawner.gd" id="3_c4y4e"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nie2f"]
-size = Vector2(1153, 20)
+size = Vector2(3117, 20)
 
 [node name="Node2D" type="Node2D"]
 
@@ -13,17 +13,21 @@ size = Vector2(1153, 20)
 position = Vector2(436, 461)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(139.5, 0)
+position = Vector2(1121.5, 0)
 shape = SubResource("RectangleShape2D_nie2f")
 
 [node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D"]
-offset_left = -575.0
-offset_top = -10.0
-offset_right = 576.0
-offset_bottom = 10.0
+offset_left = -1557.0
+offset_top = -11.0
+offset_right = 1559.0
+offset_bottom = 9.0
 
-[node name="CharacterBody2D2" parent="." instance=ExtResource("1_t6fpy")]
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_t6fpy")]
 position = Vector2(64, 373)
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position = Vector2(256, -82)
+zoom = Vector2(1.8, 1.8)
 
 [node name="Node2D" type="Node2D" parent="."]
 script = ExtResource("3_c4y4e")
@@ -33,7 +37,25 @@ obstacle_scene = ExtResource("2_4ll0g")
 position = Vector2(646, 439)
 
 [node name="ObstacleSpawn2" type="Node2D" parent="Node2D" groups=["obstacle"]]
-position = Vector2(949, 439)
+position = Vector2(969, 439)
 
 [node name="ObstacleSpawn3" type="Node2D" parent="Node2D" groups=["obstacle"]]
 position = Vector2(323, 439)
+
+[node name="ObstacleSpawn4" type="Node2D" parent="Node2D" groups=["obstacle"]]
+position = Vector2(1615, 439)
+
+[node name="ObstacleSpawn5" type="Node2D" parent="Node2D" groups=["obstacle"]]
+position = Vector2(1938, 439)
+
+[node name="ObstacleSpawn6" type="Node2D" parent="Node2D" groups=["obstacle"]]
+position = Vector2(1292, 439)
+
+[node name="ObstacleSpawn7" type="Node2D" parent="Node2D" groups=["obstacle"]]
+position = Vector2(2584, 439)
+
+[node name="ObstacleSpawn8" type="Node2D" parent="Node2D" groups=["obstacle"]]
+position = Vector2(2907, 439)
+
+[node name="ObstacleSpawn9" type="Node2D" parent="Node2D" groups=["obstacle"]]
+position = Vector2(2261, 439)

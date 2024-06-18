@@ -1,10 +1,10 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1718585304
+::res://::1718676672
 icon.svg::CompressedTexture2D::7311203191348109421::1717102681::1718585305::1::::<><>::
-level.tscn::PackedScene::3469289241423459356::1718311941::0::1::::<><>::uid://cxvcpcs3bfhy3::::res://player_scene.tscn<>uid://boxjsjav1ffw0::::res://obstacle.tscn<>res://Spawner.gd
-obstacle 2.tscn::PackedScene::7679205221162687964::1718311941::0::1::::<><>::
-obstacle 3.tscn::PackedScene::7479807115230012883::1718311941::0::1::::<><>::
-obstacle.tscn::PackedScene::3417124253893358593::1718311941::0::1::::<><>::
+level.tscn::PackedScene::3469289241423459356::1718585629::0::1::::<><>::uid://cxvcpcs3bfhy3::::res://player_scene.tscn<>uid://boxjsjav1ffw0::::res://obstacle.tscn<>res://Spawner.gd
+obstacle 2.tscn::PackedScene::7679205221162687964::1718585629::0::1::::<><>::
+obstacle 3.tscn::PackedScene::7479807115230012883::1718585629::0::1::::<><>::
+obstacle.tscn::PackedScene::3417124253893358593::1718587770::0::1::::<><>::
 Player.gd::GDScript::-1::1717710081::0::1::::<>CharacterBody2D<>::
-player_scene.tscn::PackedScene::6430685058917222048::1718311941::0::1::::<><>::res://Player.gd<>uid://boxjsjav1ffw0::::res://obstacle.tscn
-Spawner.gd::GDScript::-1::1718145603::0::1::::<>Node2D<>::
+player_scene.tscn::PackedScene::6430685058917222048::1718585629::0::1::::<><>::res://Player.gd<>uid://boxjsjav1ffw0::::res://obstacle.tscn
+Spawner.gd::GDScript::-1::1718585482::0::1::::<>Node2D<>::

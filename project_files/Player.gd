@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
 
-@export var SPEED = 280.0
-@export var JUMP_VELOCITY = -300.0
+@export var SPEED = 350.0
+@export var JUMP_VELOCITY = -350.0
 @export var obstacle_scene: PackedScene
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
