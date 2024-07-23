@@ -5,7 +5,7 @@
 [ext_resource type="Script" path="res://Spawner.gd" id="3_c4y4e"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nie2f"]
-size = Vector2(3117, 20)
+size = Vector2(11674, 20)
 
 [node name="Node2D" type="Node2D"]
 
@@ -13,13 +13,13 @@ size = Vector2(3117, 20)
 position = Vector2(436, 461)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(1121.5, 0)
+position = Vector2(5400, 0)
 shape = SubResource("RectangleShape2D_nie2f")
 
 [node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D"]
-offset_left = -1557.0
+offset_left = -5837.0
 offset_top = -11.0
-offset_right = 1559.0
+offset_right = 5837.0
 offset_bottom = 9.0
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_t6fpy")]
@@ -57,5 +57,77 @@ position = Vector2(2584, 439)
 [node name="ObstacleSpawn8" type="Node2D" parent="Node2D" groups=["obstacle"]]
 position = Vector2(2907, 439)
 
+[node name="ObstacleSpawn10" type="Node2D" parent="Node2D" groups=["obstacle"]]
+position = Vector2(3230, 439)
+
 [node name="ObstacleSpawn9" type="Node2D" parent="Node2D" groups=["obstacle"]]
 position = Vector2(2261, 439)
+
+[node name="ObstacleSpawn11" type="Node2D" parent="Node2D" groups=["obstacle"]]
+position = Vector2(3553, 439)
+
+[node name="ObstacleSpawn12" type="Node2D" parent="Node2D" groups=["obstacle"]]
+position = Vector2(3876, 439)
+
+[node name="ObstacleSpawn13" type="Node2D" parent="Node2D" groups=["obstacle"]]
+position = Vector2(4199, 439)
+
+[node name="ObstacleSpawn14" type="Node2D" parent="Node2D" groups=["obstacle"]]
+position = Vector2(4522, 439)
+
+[node name="ObstacleSpawn15" type="Node2D" parent="Node2D" groups=["obstacle"]]
+position = Vector2(5168, 439)
+
+[node name="ObstacleSpawn16" type="Node2D" parent="Node2D" groups=["obstacle"]]
+position = Vector2(5491, 439)
+
+[node name="ObstacleSpawn17" type="Node2D" parent="Node2D" groups=["obstacle"]]
+position = Vector2(5814, 439)
+
+[node name="ObstacleSpawn18" type="Node2D" parent="Node2D" groups=["obstacle"]]
+position = Vector2(4845, 439)
+
+[node name="ObstacleSpawn19" type="Node2D" parent="Node2D" groups=["obstacle"]]
+position = Vector2(6137, 439)
+
+[node name="ObstacleSpawn20" type="Node2D" parent="Node2D" groups=["obstacle"]]
+position = Vector2(6460, 439)
+
+[node name="ObstacleSpawn21" type="Node2D" parent="Node2D" groups=["obstacle"]]
+position = Vector2(6783, 439)
+
+[node name="ObstacleSpawn22" type="Node2D" parent="Node2D" groups=["obstacle"]]
+position = Vector2(7106, 439)
+
+[node name="ObstacleSpawn23" type="Node2D" parent="Node2D" groups=["obstacle"]]
+position = Vector2(7752, 439)
+
+[node name="ObstacleSpawn24" type="Node2D" parent="Node2D" groups=["obstacle"]]
+position = Vector2(8075, 439)
+
+[node name="ObstacleSpawn25" type="Node2D" parent="Node2D" groups=["obstacle"]]
+position = Vector2(8398, 439)
+
+[node name="ObstacleSpawn26" type="Node2D" parent="Node2D" groups=["obstacle"]]
+position = Vector2(7429, 439)
+
+[node name="ObstacleSpawn27" type="Node2D" parent="Node2D" groups=["obstacle"]]
+position = Vector2(8721, 439)
+
+[node name="ObstacleSpawn28" type="Node2D" parent="Node2D" groups=["obstacle"]]
+position = Vector2(9044, 439)
+
+[node name="ObstacleSpawn29" type="Node2D" parent="Node2D" groups=["obstacle"]]
+position = Vector2(9367, 439)
+
+[node name="ObstacleSpawn30" type="Node2D" parent="Node2D" groups=["obstacle"]]
+position = Vector2(9690, 439)
+
+[node name="ObstacleSpawn31" type="Node2D" parent="Node2D" groups=["obstacle"]]
+position = Vector2(10336, 439)
+
+[node name="ObstacleSpawn32" type="Node2D" parent="Node2D" groups=["obstacle"]]
+position = Vector2(10659, 439)
+
+[node name="ObstacleSpawn34" type="Node2D" parent="Node2D" groups=["obstacle"]]
+position = Vector2(10013, 439)
