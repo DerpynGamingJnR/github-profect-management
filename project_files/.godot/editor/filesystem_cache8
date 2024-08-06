@@ -1,5 +1,6 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1722910275
+::res://::1722983427
+Blank Cover copy.png::CompressedTexture2D::8037191887016581214::1722983427::1722983432::1::::<><>::
 Duy0.png::CompressedTexture2D::2945497700248382032::1721773642::1721773896::1::::<><>::
 Duy1.png::CompressedTexture2D::1330043748494703983::1721773643::1721773896::1::::<><>::
 Duy2.png::CompressedTexture2D::1550076807204822481::1721773643::1721773896::1::::<><>::
@@ -7,7 +8,7 @@ Duy3.png::CompressedTexture2D::5058912304778714907::1721773643::1721773896::1:::
 Heart Animation for End Scene0.png::CompressedTexture2D::6839053193223108523::1721942497::1721942612::1::::<><>::
 Heart Animation for End Scene1.png::CompressedTexture2D::5946026276750874067::1721942497::1721942612::1::::<><>::
 Heart Animation for End Scene2.png::CompressedTexture2D::5393309152466901492::1721942498::1721942612::1::::<><>::
-heart.tscn::PackedScene::8378454364123740081::1722822594::0::1::::<><>::uid://c4o5hbf1gckxf::::res://Heart Animation for End Scene0.png<>uid://cqykgi1al51j0::::res://Heart Animation for End Scene1.png<>uid://ci3tap6f0k6jg::::res://Heart Animation for End Scene2.png
+heart.tscn::PackedScene::8378454364123740081::1722983237::0::1::::<><>::uid://c4o5hbf1gckxf::::res://Heart Animation for End Scene0.png<>uid://cqykgi1al51j0::::res://Heart Animation for End Scene1.png<>uid://ci3tap6f0k6jg::::res://Heart Animation for End Scene2.png
 icon.svg::CompressedTexture2D::7311203191348109421::1717102681::1718585305::1::::<><>::
 Indicator Head0.png::CompressedTexture2D::3801404460612560494::1721942600::1721942612::1::::<><>::
 Indicator Head1.png::CompressedTexture2D::4791354111141991857::1721942600::1721942612::1::::<><>::
@@ -15,15 +16,16 @@ Indicator Head2.png::CompressedTexture2D::7796860266136552477::1721942600::17219
 Leonore0.png::CompressedTexture2D::6657388929394068962::1721773622::1721773896::1::::<><>::
 Leonore1.png::CompressedTexture2D::286256327092527780::1721773622::1721773896::1::::<><>::
 Leonore2.png::CompressedTexture2D::1207018499706596503::1721773622::1721773896::1::::<><>::
-level.tscn::PackedScene::3469289241423459356::1722822594::0::1::::<><>::uid://cxvcpcs3bfhy3::::res://player_scene.tscn<>uid://boxjsjav1ffw0::::res://obstacle.tscn<>uid://dac518k6yn6d2::::res://partner_scene.tscn<>res://Spawner.gd<>uid://drmt6iw8c02uv::::res://heart.tscn
+level.tscn::PackedScene::3469289241423459356::1722983237::0::1::::<><>::uid://cxvcpcs3bfhy3::::res://player_scene.tscn<>uid://boxjsjav1ffw0::::res://obstacle.tscn<>uid://dac518k6yn6d2::::res://partner_scene.tscn<>res://Spawner.gd<>uid://drmt6iw8c02uv::::res://heart.tscn<>res://heart.gd
 Obstacle 1 copy.png::CompressedTexture2D::8370244033727372575::1721773737::1721773896::1::::<><>::
 Obstacle 2 copy.png::CompressedTexture2D::5218367857100862928::1721773725::1721773896::1::::<><>::
-obstacle 2.tscn::PackedScene::7679205221162687964::1722822594::0::1::::<><>::uid://cgl20yfoogwse::::res://Obstacle 2 copy.png
+obstacle 2.tscn::PackedScene::7679205221162687964::1722983237::0::1::::<><>::uid://cgl20yfoogwse::::res://Obstacle 2 copy.png
 Obstacle 3 copy.png::CompressedTexture2D::5938793320922773245::1721773711::1721773896::1::::<><>::
-obstacle 3.tscn::PackedScene::7479807115230012883::1722822594::0::1::::<><>::uid://cqu2b8oqrti26::::res://Obstacle 3 copy.png
-obstacle.tscn::PackedScene::3417124253893358593::1722822594::0::1::::<><>::uid://driuxw7pswdv0::::res://Obstacle 1 copy.png
-Partner.gd::GDScript::-1::1722821357::0::1::::<>CharacterBody2D<>::
-partner_scene.tscn::PackedScene::7165260497171659973::1722822594::0::1::::<><>::uid://c135ht2g4hiji::::res://Leonore0.png<>res://Partner.gd<>uid://ecwunp4payk7::::res://Leonore1.png<>uid://rgxohushq05h::::res://Leonore2.png
+obstacle 3.tscn::PackedScene::7479807115230012883::1722983237::0::1::::<><>::uid://cqu2b8oqrti26::::res://Obstacle 3 copy.png
+obstacle.tscn::PackedScene::3417124253893358593::1722983237::0::1::::<><>::uid://driuxw7pswdv0::::res://Obstacle 1 copy.png
+Partner.gd::GDScript::-1::1722911074::0::1::::<>CharacterBody2D<>::
+partner_scene.tscn::PackedScene::7165260497171659973::1722983237::0::1::::<><>::uid://c135ht2g4hiji::::res://Leonore0.png<>res://Partner.gd<>uid://ecwunp4payk7::::res://Leonore1.png<>uid://rgxohushq05h::::res://Leonore2.png
 Player.gd::GDScript::-1::1722821975::0::1::::<>CharacterBody2D<>::
-player_scene.tscn::PackedScene::6430685058917222048::1722822594::0::1::::<><>::res://Player.gd<>uid://boxjsjav1ffw0::::res://obstacle.tscn<>uid://cectst2ltv5ud::::res://Duy3.png<>uid://bh726f2e1lfs7::::res://Duy0.png<>uid://s7jvj513hitr::::res://Duy1.png<>uid://wc4sks85a5gn::::res://Duy2.png
+player_scene.tscn::PackedScene::6430685058917222048::1722983237::0::1::::<><>::res://Player.gd<>uid://boxjsjav1ffw0::::res://obstacle.tscn<>uid://cectst2ltv5ud::::res://Duy3.png<>uid://bh726f2e1lfs7::::res://Duy0.png<>uid://s7jvj513hitr::::res://Duy1.png<>uid://wc4sks85a5gn::::res://Duy2.png
+heart.gd::GDScript::-1::1722983215::0::1::::<>AnimatedSprite2D<>::
 Spawner.gd::GDScript::-1::1718585482::0::1::::<>Node2D<>::

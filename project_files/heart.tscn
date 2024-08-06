@@ -1,12 +1,16 @@
-[gd_scene load_steps=6 format=3 uid="uid://drmt6iw8c02uv"]
+[gd_scene load_steps=7 format=3 uid="uid://drmt6iw8c02uv"]
 
+[ext_resource type="Texture2D" uid="uid://dmrjm12pbk3ha" path="res://Blank Cover copy.png" id="1_on73r"]
 [ext_resource type="Texture2D" uid="uid://c4o5hbf1gckxf" path="res://Heart Animation for End Scene0.png" id="1_u7pds"]
 [ext_resource type="Texture2D" uid="uid://cqykgi1al51j0" path="res://Heart Animation for End Scene1.png" id="2_0bvl3"]
 [ext_resource type="Texture2D" uid="uid://ci3tap6f0k6jg" path="res://Heart Animation for End Scene2.png" id="3_felj4"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_1uur0"]
 animations = [{
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_on73r")
+}],
 "loop": true,
 "name": &"default",
 "speed": 5.0
@@ -32,7 +36,7 @@ animations = [{
 position = Vector2(-4, -9)
 scale = Vector2(1.5625, 1.75)
 sprite_frames = SubResource("SpriteFrames_1uur0")
-animation = &"love"
+autoplay = "default"
 
 [node name="Area2D" type="Area2D" parent="."]
 
