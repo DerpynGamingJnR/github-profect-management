@@ -1,7 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://boxjsjav1ffw0"]
+[gd_scene load_steps=3 format=3 uid="uid://boxjsjav1ffw0"]
+
+[ext_resource type="Texture2D" uid="uid://driuxw7pswdv0" path="res://Obstacle 1 copy.png" id="1_fhn55"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_01os8"]
-size = Vector2(14, 14)
+size = Vector2(51.9688, 40.1875)
 
 [node name="Area2D" type="Area2D"]
 position = Vector2(-4, -5)
@@ -11,9 +13,7 @@ metadata/obstacle = true
 position = Vector2(4, 5)
 shape = SubResource("RectangleShape2D_01os8")
 
-[node name="ColorRect" type="ColorRect" parent="CollisionShape2D"]
-offset_left = -7.0
-offset_top = -7.0
-offset_right = 7.0
-offset_bottom = 7.0
-color = Color(1, 1, 0, 1)
+[node name="Obstacle1Copy" type="Sprite2D" parent="CollisionShape2D"]
+position = Vector2(-4.76837e-07, -9.53674e-07)
+scale = Vector2(3.25, 2.5)
+texture = ExtResource("1_fhn55")

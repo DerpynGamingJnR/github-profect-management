@@ -1,0 +1,57 @@
+[gd_scene load_steps=8 format=3 uid="uid://dac518k6yn6d2"]
+
+[ext_resource type="Texture2D" uid="uid://c135ht2g4hiji" path="res://Leonore0.png" id="1_crfwu"]
+[ext_resource type="Script" path="res://Partner.gd" id="1_tbjeq"]
+[ext_resource type="Texture2D" uid="uid://ecwunp4payk7" path="res://Leonore1.png" id="2_gqu04"]
+[ext_resource type="Texture2D" uid="uid://rgxohushq05h" path="res://Leonore2.png" id="3_3o43g"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xsblk"]
+size = Vector2(40, 74)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pktet"]
+size = Vector2(40, 74)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jthgs"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_gqu04")
+}],
+"loop": true,
+"name": &"meet",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_crfwu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_gqu04")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_3o43g")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+position = Vector2(-5, -20)
+script = ExtResource("1_tbjeq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(5, 20)
+shape = SubResource("RectangleShape2D_xsblk")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(5, 20)
+shape = SubResource("RectangleShape2D_pktet")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(3, 17)
+scale = Vector2(2.531, 2.531)
+sprite_frames = SubResource("SpriteFrames_jthgs")
+animation = &"meet"

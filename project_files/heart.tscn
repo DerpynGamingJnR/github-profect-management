@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=3 uid="uid://drmt6iw8c02uv"]
+
+[ext_resource type="Texture2D" uid="uid://c4o5hbf1gckxf" path="res://Heart Animation for End Scene0.png" id="1_u7pds"]
+[ext_resource type="Texture2D" uid="uid://cqykgi1al51j0" path="res://Heart Animation for End Scene1.png" id="2_0bvl3"]
+[ext_resource type="Texture2D" uid="uid://ci3tap6f0k6jg" path="res://Heart Animation for End Scene2.png" id="3_felj4"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1uur0"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_u7pds")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_0bvl3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_felj4")
+}],
+"loop": true,
+"name": &"love",
+"speed": 2.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2dovf"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+position = Vector2(-4, -9)
+scale = Vector2(1.5625, 1.75)
+sprite_frames = SubResource("SpriteFrames_1uur0")
+animation = &"love"
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(2.56, 5.14286)
+shape = SubResource("CircleShape2D_2dovf")
