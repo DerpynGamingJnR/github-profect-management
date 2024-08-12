@@ -6,6 +6,7 @@ extends CharacterBody2D
 @export var obstacle_scene: PackedScene
 @export var animation = ""
 var in_cutscene = false
+var falling = false
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
@@ -52,4 +53,6 @@ func _end_cutscene(area):
 	if area.has_meta("end_cutscene"):
 		in_cutscene = true
 		get_node("/root/Node2D/AnimationPlayer").play("end_cutscene")
-		
+
+
+

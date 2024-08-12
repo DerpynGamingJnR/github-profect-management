@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://bposxmdmkfxfo"]
+[gd_scene load_steps=13 format=3 uid="uid://bposxmdmkfxfo"]
 
 [ext_resource type="PackedScene" uid="uid://cxvcpcs3bfhy3" path="res://player_scene.tscn" id="1_t6fpy"]
 [ext_resource type="PackedScene" uid="uid://boxjsjav1ffw0" path="res://obstacle.tscn" id="2_4ll0g"]
@@ -6,6 +6,7 @@
 [ext_resource type="Script" path="res://Spawner.gd" id="3_c4y4e"]
 [ext_resource type="PackedScene" uid="uid://drmt6iw8c02uv" path="res://heart.tscn" id="5_mubpw"]
 [ext_resource type="Script" path="res://heart.gd" id="6_rk7jh"]
+[ext_resource type="PackedScene" uid="uid://bruv1wsghp474" path="res://falling_obstacle.tscn" id="7_0sr3m"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nie2f"]
 size = Vector2(11674, 20)
@@ -150,7 +151,7 @@ offset_right = 5957.0
 offset_bottom = 9.0
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_t6fpy")]
-position = Vector2(10744, 276)
+position = Vector2(33, 393)
 animation = "end"
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
@@ -185,13 +186,6 @@ scale = Vector2(4, 4)
 position = Vector2(1938, 428)
 scale = Vector2(4, 4)
 
-[node name="ObstacleSpawn6" type="Node2D" parent="Node2D" groups=["obstacle"]]
-position = Vector2(1292, 428)
-scale = Vector2(4, 4)
-
-[node name="ObstacleSpawn7" type="Node2D" parent="Node2D" groups=["obstacle"]]
-position = Vector2(2584, 428)
-
 [node name="ObstacleSpawn8" type="Node2D" parent="Node2D" groups=["obstacle"]]
 position = Vector2(2907, 428)
 
@@ -205,17 +199,11 @@ scale = Vector2(4, 4)
 [node name="ObstacleSpawn11" type="Node2D" parent="Node2D" groups=["obstacle"]]
 position = Vector2(3553, 428)
 
-[node name="ObstacleSpawn12" type="Node2D" parent="Node2D" groups=["obstacle"]]
-position = Vector2(3876, 428)
-
 [node name="ObstacleSpawn13" type="Node2D" parent="Node2D" groups=["obstacle"]]
 position = Vector2(4199, 428)
 
 [node name="ObstacleSpawn14" type="Node2D" parent="Node2D" groups=["obstacle"]]
 position = Vector2(4522, 428)
-
-[node name="ObstacleSpawn15" type="Node2D" parent="Node2D" groups=["obstacle"]]
-position = Vector2(5168, 428)
 
 [node name="ObstacleSpawn16" type="Node2D" parent="Node2D" groups=["obstacle"]]
 position = Vector2(5491, 428)
@@ -229,17 +217,11 @@ position = Vector2(4845, 428)
 [node name="ObstacleSpawn19" type="Node2D" parent="Node2D" groups=["obstacle"]]
 position = Vector2(6137, 428)
 
-[node name="ObstacleSpawn20" type="Node2D" parent="Node2D" groups=["obstacle"]]
-position = Vector2(6460, 428)
-
 [node name="ObstacleSpawn21" type="Node2D" parent="Node2D" groups=["obstacle"]]
 position = Vector2(6783, 428)
 
 [node name="ObstacleSpawn22" type="Node2D" parent="Node2D" groups=["obstacle"]]
 position = Vector2(7106, 428)
-
-[node name="ObstacleSpawn23" type="Node2D" parent="Node2D" groups=["obstacle"]]
-position = Vector2(7752, 428)
 
 [node name="ObstacleSpawn24" type="Node2D" parent="Node2D" groups=["obstacle"]]
 position = Vector2(8075, 428)
@@ -253,17 +235,11 @@ position = Vector2(7429, 428)
 [node name="ObstacleSpawn27" type="Node2D" parent="Node2D" groups=["obstacle"]]
 position = Vector2(8721, 428)
 
-[node name="ObstacleSpawn28" type="Node2D" parent="Node2D" groups=["obstacle"]]
-position = Vector2(9044, 428)
-
 [node name="ObstacleSpawn29" type="Node2D" parent="Node2D" groups=["obstacle"]]
 position = Vector2(9367, 428)
 
 [node name="ObstacleSpawn30" type="Node2D" parent="Node2D" groups=["obstacle"]]
 position = Vector2(9690, 428)
-
-[node name="ObstacleSpawn31" type="Node2D" parent="Node2D" groups=["obstacle"]]
-position = Vector2(10336, 428)
 
 [node name="ObstacleSpawn32" type="Node2D" parent="Node2D" groups=["obstacle"]]
 position = Vector2(10659, 428)
@@ -288,3 +264,27 @@ shape = SubResource("RectangleShape2D_wt13v")
 position = Vector2(11249, 368)
 script = ExtResource("6_rk7jh")
 current_anim = "default"
+
+[node name="Area2D2" parent="." instance=ExtResource("7_0sr3m")]
+position = Vector2(1222, 438)
+
+[node name="Area2D3" parent="." instance=ExtResource("7_0sr3m")]
+position = Vector2(2502, 438)
+
+[node name="Area2D4" parent="." instance=ExtResource("7_0sr3m")]
+position = Vector2(3774, 438)
+
+[node name="Area2D5" parent="." instance=ExtResource("7_0sr3m")]
+position = Vector2(5093, 438)
+
+[node name="Area2D6" parent="." instance=ExtResource("7_0sr3m")]
+position = Vector2(6388, 438)
+
+[node name="Area2D7" parent="." instance=ExtResource("7_0sr3m")]
+position = Vector2(7687, 438)
+
+[node name="Area2D8" parent="." instance=ExtResource("7_0sr3m")]
+position = Vector2(8967, 438)
+
+[node name="Area2D9" parent="." instance=ExtResource("7_0sr3m")]
+position = Vector2(10247, 438)

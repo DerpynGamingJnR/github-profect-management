@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://bruv1wsghp474"]
+
+[ext_resource type="Texture2D" uid="uid://csbtksvb2vqky" path="res://X Marks the Spot.png" id="1_c4pl5"]
+[ext_resource type="Texture2D" uid="uid://cgkmdq5klkiat" path="res://Ice shard.png" id="1_i3o0x"]
+[ext_resource type="Script" path="res://Falling.gd" id="1_ieule"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lvdtm"]
+size = Vector2(22, 31)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pdp7y"]
+size = Vector2(22, 56)
+
+[node name="Area2D" type="Area2D"]
+metadata/falling = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -12.5)
+shape = SubResource("RectangleShape2D_lvdtm")
+
+[node name="XMarksTheSpot" type="Sprite2D" parent="."]
+position = Vector2(-1, -6)
+scale = Vector2(1.375, 1.125)
+texture = ExtResource("1_c4pl5")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(205, -417)
+script = ExtResource("1_ieule")
+metadata/_edit_group_ = true
+metadata/obstacle = true
+
+[node name="IceShard" type="Sprite2D" parent="Area2D"]
+position = Vector2(-2.38419e-07, 0)
+scale = Vector2(2.40625, 3.53125)
+texture = ExtResource("1_i3o0x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-1, 0)
+shape = SubResource("RectangleShape2D_pdp7y")
+
+[connection signal="area_entered" from="." to="Area2D" method="_falling_obstacle"]
