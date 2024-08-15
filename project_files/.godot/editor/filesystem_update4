@@ -1,10 +1,9 @@
-res://falling_obstacle.tscn
-res://Player.gd
-res://Falling.gd
 res://level.tscn
 res://player_scene.tscn
 res://partner_scene.tscn
 res://obstacle.tscn
 res://obstacle 2.tscn
 res://obstacle 3.tscn
-res://heart.tscn
+res://falling_obstacle.tscn
+res://indicator-like map.tscn
+res://Player.gd

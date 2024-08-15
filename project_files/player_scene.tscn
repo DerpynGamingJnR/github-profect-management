@@ -68,5 +68,5 @@ sprite_frames = SubResource("SpriteFrames_thwae")
 animation = &"walk"
 frame_progress = 0.502856
 
-[connection signal="area_entered" from="Area2D" to="." method="_death"]
 [connection signal="area_entered" from="Area2D" to="." method="_end_cutscene"]
+[connection signal="area_entered" from="Area2D" to="." method="_death"]

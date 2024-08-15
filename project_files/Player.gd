@@ -5,14 +5,28 @@ extends CharacterBody2D
 @export var JUMP_VELOCITY = -350.0
 @export var obstacle_scene: PackedScene
 @export var animation = ""
+@onready var end = get_node("/root/Node2D/Area2D")
 var in_cutscene = false
 var falling = false
+var total_distance
+var remaining_distance
+var covered_distance
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
+func _ready():
+	total_distance = end.global_position.x - global_position.x
 
 func _physics_process(delta):
+	remaining_distance = end.global_position.x - global_position.x
+	covered_distance = total_distance - remaining_distance
+	if covered_distance / total_distance < 1.0:
+		get_node("/root/Node2D/CharacterBody2D/Camera2D/Path2D/PathFollow2D").progress_ratio = covered_distance / total_distance
+		get_node("/root/Node2D/CharacterBody2D/Camera2D/Path2D/PathFollow2D/AnimatedSprite2D").play("Head")
+	else:
+		get_node("/root/Node2D/CharacterBody2D/Camera2D/Path2D/PathFollow2D/AnimatedSprite2D").play("Normal")
+		
 	if not in_cutscene:
 	# Add the gravity.
 		if not is_on_floor():

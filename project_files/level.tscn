@@ -1,15 +1,23 @@
-[gd_scene load_steps=13 format=3 uid="uid://bposxmdmkfxfo"]
+[gd_scene load_steps=16 format=3 uid="uid://bposxmdmkfxfo"]
 
 [ext_resource type="PackedScene" uid="uid://cxvcpcs3bfhy3" path="res://player_scene.tscn" id="1_t6fpy"]
 [ext_resource type="PackedScene" uid="uid://boxjsjav1ffw0" path="res://obstacle.tscn" id="2_4ll0g"]
 [ext_resource type="PackedScene" uid="uid://dac518k6yn6d2" path="res://partner_scene.tscn" id="2_cxa2g"]
 [ext_resource type="Script" path="res://Spawner.gd" id="3_c4y4e"]
+[ext_resource type="Texture2D" uid="uid://csbtksvb2vqky" path="res://X Marks the Spot.png" id="3_kjjmo"]
 [ext_resource type="PackedScene" uid="uid://drmt6iw8c02uv" path="res://heart.tscn" id="5_mubpw"]
 [ext_resource type="Script" path="res://heart.gd" id="6_rk7jh"]
 [ext_resource type="PackedScene" uid="uid://bruv1wsghp474" path="res://falling_obstacle.tscn" id="7_0sr3m"]
+[ext_resource type="PackedScene" uid="uid://b8sf72c068fyc" path="res://indicator-like map.tscn" id="8_l8sox"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nie2f"]
 size = Vector2(11674, 20)
+
+[sub_resource type="Curve2D" id="Curve2D_5byxx"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 174, -130, 0, 0, 0, 0, 718, -131)
+}
+point_count = 2
 
 [sub_resource type="Animation" id="Animation_0gfvq"]
 length = 0.001
@@ -158,6 +166,30 @@ animation = "end"
 position = Vector2(256, -82)
 zoom = Vector2(1.8, 1.8)
 
+[node name="Path2D" type="Path2D" parent="CharacterBody2D/Camera2D"]
+position = Vector2(-437, -18)
+curve = SubResource("Curve2D_5byxx")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="CharacterBody2D/Camera2D/Path2D"]
+position = Vector2(174, -130)
+rotation = -0.00183823
+
+[node name="AnimatedSprite2D" parent="CharacterBody2D/Camera2D/Path2D/PathFollow2D" instance=ExtResource("8_l8sox")]
+position = Vector2(0.000349045, 0.000306129)
+scale = Vector2(1.6789, 1.47285)
+
+[node name="XMarksTheSpot" type="Sprite2D" parent="CharacterBody2D/Camera2D/Path2D"]
+position = Vector2(717, -131)
+scale = Vector2(1.6875, 1.5625)
+texture = ExtResource("3_kjjmo")
+
+[node name="ColorRect" type="ColorRect" parent="CharacterBody2D/Camera2D/Path2D"]
+z_index = -1
+offset_left = 169.0
+offset_top = -135.0
+offset_right = 718.0
+offset_bottom = -127.0
+
 [node name="CharacterBody2D2" parent="." instance=ExtResource("2_cxa2g")]
 position = Vector2(11401, 393)
 animation = "walk"
@@ -266,25 +298,25 @@ script = ExtResource("6_rk7jh")
 current_anim = "default"
 
 [node name="Area2D2" parent="." instance=ExtResource("7_0sr3m")]
-position = Vector2(1222, 438)
+position = Vector2(1227, 438)
 
 [node name="Area2D3" parent="." instance=ExtResource("7_0sr3m")]
-position = Vector2(2502, 438)
+position = Vector2(2507, 438)
 
 [node name="Area2D4" parent="." instance=ExtResource("7_0sr3m")]
-position = Vector2(3774, 438)
+position = Vector2(3802, 438)
 
 [node name="Area2D5" parent="." instance=ExtResource("7_0sr3m")]
-position = Vector2(5093, 438)
+position = Vector2(5098, 438)
 
 [node name="Area2D6" parent="." instance=ExtResource("7_0sr3m")]
-position = Vector2(6388, 438)
+position = Vector2(6393, 438)
 
 [node name="Area2D7" parent="." instance=ExtResource("7_0sr3m")]
-position = Vector2(7687, 438)
+position = Vector2(7692, 438)
 
 [node name="Area2D8" parent="." instance=ExtResource("7_0sr3m")]
-position = Vector2(8967, 438)
+position = Vector2(8972, 438)
 
 [node name="Area2D9" parent="." instance=ExtResource("7_0sr3m")]
-position = Vector2(10247, 438)
+position = Vector2(10252, 438)

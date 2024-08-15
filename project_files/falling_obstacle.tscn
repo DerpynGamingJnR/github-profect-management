@@ -5,7 +5,7 @@
 [ext_resource type="Script" path="res://Falling.gd" id="1_ieule"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lvdtm"]
-size = Vector2(22, 31)
+size = Vector2(22, 17)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pdp7y"]
 size = Vector2(22, 56)
@@ -14,7 +14,7 @@ size = Vector2(22, 56)
 metadata/falling = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-1, -12.5)
+position = Vector2(-1, -5.5)
 shape = SubResource("RectangleShape2D_lvdtm")
 
 [node name="XMarksTheSpot" type="Sprite2D" parent="."]

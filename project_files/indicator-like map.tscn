@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=3 uid="uid://b8sf72c068fyc"]
+
+[ext_resource type="Texture2D" uid="uid://bufott7avdmn3" path="res://Indicator Head0.png" id="1_fh3cw"]
+[ext_resource type="Texture2D" uid="uid://cai75w6qgalg0" path="res://Indicator Head1.png" id="2_fug5m"]
+[ext_resource type="Texture2D" uid="uid://djc4fc05m47dp" path="res://Indicator Head2.png" id="3_ksbgq"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lg6u6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_fh3cw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_fug5m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ksbgq")
+}],
+"loop": true,
+"name": &"Head",
+"speed": 2.5
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_fh3cw")
+}],
+"loop": true,
+"name": &"Normal",
+"speed": 5.0
+}]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_lg6u6")
+animation = &"Normal"
