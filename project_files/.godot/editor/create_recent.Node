@@ -1,5 +1,8 @@
-TileMap
+Button
 Label
+CanvasLayer
+AudioStreamPlayer
+TileMap
 ColorRect
 AnimatedSprite2D
 PathFollow2D

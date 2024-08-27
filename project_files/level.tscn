@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://bposxmdmkfxfo"]
+[gd_scene load_steps=23 format=3 uid="uid://bposxmdmkfxfo"]
 
 [ext_resource type="PackedScene" uid="uid://cxvcpcs3bfhy3" path="res://player_scene.tscn" id="1_t6fpy"]
 [ext_resource type="PackedScene" uid="uid://boxjsjav1ffw0" path="res://obstacle.tscn" id="2_4ll0g"]
@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://muqabxquwrl8" path="res://Background.png" id="11_0bktm"]
 [ext_resource type="Texture2D" uid="uid://bink5335ds86w" path="res://Capture 2.png" id="12_ypces"]
 [ext_resource type="Texture2D" uid="uid://bumcg5t6tpvdh" path="res://Capture 2 (1).png" id="13_jsguu"]
+[ext_resource type="AudioStream" uid="uid://3cje58y2hpf2" path="res://Music.ogg" id="14_avmxa"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nie2f"]
 size = Vector2(11674, 20)
@@ -393,3 +394,7 @@ z_index = -2
 position = Vector2(11224.2, 218.25)
 scale = Vector2(1.62603, 1.01445)
 texture = ExtResource("12_ypces")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("14_avmxa")
+autoplay = true
