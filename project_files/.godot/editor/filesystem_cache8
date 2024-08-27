@@ -1,12 +1,15 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1723754985
+::res://::1724722546
+Background.png::CompressedTexture2D::884525239430277515::1724290546::1724290542::1::::<><>::
 Blank Cover copy.png::CompressedTexture2D::8037191887016581214::1722983427::1722983432::1::::<><>::
+Capture 2 (1).png::CompressedTexture2D::3815103844737719049::1724636007::1724636007::1::::<><>::
+Capture 2.png::CompressedTexture2D::2975430602621094840::1724635374::1724635374::1::::<><>::
 Duy0.png::CompressedTexture2D::2945497700248382032::1721773642::1721773896::1::::<><>::
 Duy1.png::CompressedTexture2D::1330043748494703983::1721773643::1721773896::1::::<><>::
 Duy2.png::CompressedTexture2D::1550076807204822481::1721773643::1721773896::1::::<><>::
 Duy3.png::CompressedTexture2D::5058912304778714907::1721773643::1721773896::1::::<><>::
 Falling.gd::GDScript::-1::1723426616::0::1::::<>Area2D<>::
-falling_obstacle.tscn::PackedScene::3622241251713243897::1723687812::0::1::::<><>::uid://csbtksvb2vqky::::res://X Marks the Spot.png<>uid://cgkmdq5klkiat::::res://Ice shard.png<>res://Falling.gd
+falling_obstacle.tscn::PackedScene::3622241251713243897::1724636434::0::1::::<><>::uid://csbtksvb2vqky::::res://X Marks the Spot.png<>uid://cgkmdq5klkiat::::res://Ice shard.png<>res://Falling.gd
 Heart Animation for End Scene0.png::CompressedTexture2D::6839053193223108523::1721942497::1721942612::1::::<><>::
 Heart Animation for End Scene1.png::CompressedTexture2D::5946026276750874067::1721942497::1721942612::1::::<><>::
 Heart Animation for End Scene2.png::CompressedTexture2D::5393309152466901492::1721942498::1721942612::1::::<><>::
@@ -17,21 +20,21 @@ icon.svg::CompressedTexture2D::7311203191348109421::1717102681::1718585305::1:::
 Indicator Head0.png::CompressedTexture2D::3801404460612560494::1721942600::1721942612::1::::<><>::
 Indicator Head1.png::CompressedTexture2D::4791354111141991857::1721942600::1721942612::1::::<><>::
 Indicator Head2.png::CompressedTexture2D::7796860266136552477::1721942600::1721942612::1::::<><>::
-indicator-like map.tscn::PackedScene::4740173476088713054::1723687812::0::1::::<><>::uid://bufott7avdmn3::::res://Indicator Head0.png<>uid://cai75w6qgalg0::::res://Indicator Head1.png<>uid://djc4fc05m47dp::::res://Indicator Head2.png
+indicator-like map.tscn::PackedScene::4740173476088713054::1724636434::0::1::::<><>::uid://bufott7avdmn3::::res://Indicator Head0.png<>uid://cai75w6qgalg0::::res://Indicator Head1.png<>uid://djc4fc05m47dp::::res://Indicator Head2.png
 Leonore0.png::CompressedTexture2D::6657388929394068962::1721773622::1721773896::1::::<><>::
 Leonore1.png::CompressedTexture2D::286256327092527780::1721773622::1721773896::1::::<><>::
 Leonore2.png::CompressedTexture2D::1207018499706596503::1721773622::1721773896::1::::<><>::
-level.tscn::PackedScene::3469289241423459356::1723687812::0::1::::<><>::uid://cxvcpcs3bfhy3::::res://player_scene.tscn<>uid://boxjsjav1ffw0::::res://obstacle.tscn<>uid://dac518k6yn6d2::::res://partner_scene.tscn<>res://Spawner.gd<>uid://drmt6iw8c02uv::::res://heart.tscn<>res://heart.gd<>uid://bruv1wsghp474::::res://falling_obstacle.tscn<>uid://b8sf72c068fyc::::res://indicator-like map.tscn
+level.tscn::PackedScene::3469289241423459356::1724637978::0::1::::<><>::uid://cxvcpcs3bfhy3::::res://player_scene.tscn<>uid://boxjsjav1ffw0::::res://obstacle.tscn<>uid://dac518k6yn6d2::::res://partner_scene.tscn<>res://Spawner.gd<>uid://csbtksvb2vqky::::res://X Marks the Spot.png<>uid://drmt6iw8c02uv::::res://heart.tscn<>res://heart.gd<>uid://bruv1wsghp474::::res://falling_obstacle.tscn<>uid://b8sf72c068fyc::::res://indicator-like map.tscn<>uid://6k638w1p0aqy::::res://Tilemap.png<>uid://muqabxquwrl8::::res://Background.png<>uid://bink5335ds86w::::res://Capture 2.png<>uid://bumcg5t6tpvdh::::res://Capture 2 (1).png
 Obstacle 1 copy.png::CompressedTexture2D::8370244033727372575::1721773737::1721773896::1::::<><>::
 Obstacle 2 copy.png::CompressedTexture2D::5218367857100862928::1721773725::1721773896::1::::<><>::
-obstacle 2.tscn::PackedScene::7679205221162687964::1723687812::0::1::::<><>::uid://cgl20yfoogwse::::res://Obstacle 2 copy.png
+obstacle 2.tscn::PackedScene::7679205221162687964::1724636434::0::1::::<><>::uid://cgl20yfoogwse::::res://Obstacle 2 copy.png
 Obstacle 3 copy.png::CompressedTexture2D::5938793320922773245::1721773711::1721773896::1::::<><>::
-obstacle 3.tscn::PackedScene::7479807115230012883::1723687812::0::1::::<><>::uid://cqu2b8oqrti26::::res://Obstacle 3 copy.png
-obstacle.tscn::PackedScene::3417124253893358593::1723687812::0::1::::<><>::uid://driuxw7pswdv0::::res://Obstacle 1 copy.png
+obstacle 3.tscn::PackedScene::7479807115230012883::1724636434::0::1::::<><>::uid://cqu2b8oqrti26::::res://Obstacle 3 copy.png
+obstacle.tscn::PackedScene::3417124253893358593::1724636434::0::1::::<><>::uid://driuxw7pswdv0::::res://Obstacle 1 copy.png
 Partner.gd::GDScript::-1::1722911074::0::1::::<>CharacterBody2D<>::
-partner_scene.tscn::PackedScene::7165260497171659973::1723687812::0::1::::<><>::uid://c135ht2g4hiji::::res://Leonore0.png<>res://Partner.gd<>uid://ecwunp4payk7::::res://Leonore1.png<>uid://rgxohushq05h::::res://Leonore2.png
-Player.gd::GDScript::-1::1723687721::0::1::::<>CharacterBody2D<>::
-player_scene.tscn::PackedScene::6430685058917222048::1723687812::0::1::::<><>::res://Player.gd<>uid://boxjsjav1ffw0::::res://obstacle.tscn<>uid://cectst2ltv5ud::::res://Duy3.png<>uid://bh726f2e1lfs7::::res://Duy0.png<>uid://s7jvj513hitr::::res://Duy1.png<>uid://wc4sks85a5gn::::res://Duy2.png
+partner_scene.tscn::PackedScene::7165260497171659973::1724636434::0::1::::<><>::uid://c135ht2g4hiji::::res://Leonore0.png<>res://Partner.gd<>uid://ecwunp4payk7::::res://Leonore1.png<>uid://rgxohushq05h::::res://Leonore2.png
+Player.gd::GDScript::-1::1724637978::0::1::::<>CharacterBody2D<>::
+player_scene.tscn::PackedScene::6430685058917222048::1724636434::0::1::::<><>::res://Player.gd<>uid://boxjsjav1ffw0::::res://obstacle.tscn<>uid://cectst2ltv5ud::::res://Duy3.png<>uid://bh726f2e1lfs7::::res://Duy0.png<>uid://s7jvj513hitr::::res://Duy1.png<>uid://wc4sks85a5gn::::res://Duy2.png
 Spawner.gd::GDScript::-1::1718585482::0::1::::<>Node2D<>::
-Tilemap.png::CompressedTexture2D::2198431927783300272::1723428330::1723428333::1::::<><>::
+Tilemap.png::CompressedTexture2D::2198431927783300272::1724638086::1724722546::1::::<><>::
 X Marks the Spot.png::CompressedTexture2D::6039477389370012644::1723425843::1723425844::1::::<><>::
