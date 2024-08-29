@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://birttjg6y0y4p"]
+[gd_scene load_steps=2 format=3 uid="uid://birttjg6y0y4p"]
+
+[ext_resource type="Texture2D" uid="uid://bfd1g7qq8olbo" path="res://360_F_578354358_jbJ0RJgIvLNWTVjz0dnQ4xFRKHQteqlH.jpg" id="1_tubi1"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -28,3 +30,9 @@ offset_top = 295.0
 offset_right = 670.0
 offset_bottom = 386.0
 text = "Play"
+
+[node name="360F578354358JbJ0rJgIvLnwtVjz0DnQ4xFrkhQteqlH" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(576.5, 324)
+scale = Vector2(1.82698, 1.81111)
+texture = ExtResource("1_tubi1")

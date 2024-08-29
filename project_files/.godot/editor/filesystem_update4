@@ -1,3 +1,5 @@
+res://start.tscn
+res://Player.gd
 res://level.tscn
 res://player_scene.tscn
 res://partner_scene.tscn
@@ -6,4 +8,3 @@ res://obstacle 2.tscn
 res://obstacle 3.tscn
 res://falling_obstacle.tscn
 res://indicator-like map.tscn
-res://start.tscn

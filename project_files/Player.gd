@@ -59,13 +59,14 @@ func _obstacle():
 	obstacle.position = $ObstacleSpawn.global_position
 	add_sibling(obstacle)
 
-func _death(area):
-	if area.has_meta("obstacle"):
-		get_tree().reload_current_scene()
+#func _death(area):
+#	if area.has_meta("obstacle"):
+#		get_tree().reload_current_scene()
 
 func _end_cutscene(area):
 	if area.has_meta("end_cutscene"):
 		in_cutscene = true
+		get_node("/root/Node2D/AudioStreamPlayer").playing = false
 		get_node("/root/Node2D/AnimationPlayer").play("end_cutscene")
 
 
