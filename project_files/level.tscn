@@ -13,7 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://muqabxquwrl8" path="res://Background.png" id="11_0bktm"]
 [ext_resource type="Texture2D" uid="uid://bink5335ds86w" path="res://Capture 2.png" id="12_ypces"]
 [ext_resource type="Texture2D" uid="uid://bumcg5t6tpvdh" path="res://Capture 2 (1).png" id="13_jsguu"]
-[ext_resource type="AudioStream" uid="uid://3cje58y2hpf2" path="res://Music.ogg" id="14_avmxa"]
+[ext_resource type="AudioStream" uid="uid://cmujgwh1a02sb" path="res://647032__almightypsyche__sweet-melody-with-a-romantic-chorus.ogg" id="14_o2vwc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nie2f"]
 size = Vector2(11674, 20)
@@ -396,5 +396,5 @@ scale = Vector2(1.62603, 1.01445)
 texture = ExtResource("12_ypces")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("14_avmxa")
+stream = ExtResource("14_o2vwc")
 autoplay = true

@@ -1,6 +1,23 @@
-[gd_scene load_steps=2 format=3 uid="uid://birttjg6y0y4p"]
+[gd_scene load_steps=7 format=3 uid="uid://birttjg6y0y4p"]
 
+[ext_resource type="Script" path="res://start.gd" id="1_0sjwr"]
 [ext_resource type="Texture2D" uid="uid://bfd1g7qq8olbo" path="res://360_F_578354358_jbJ0RJgIvLNWTVjz0dnQ4xFRKHQteqlH.jpg" id="1_tubi1"]
+[ext_resource type="FontFile" uid="uid://deldoj32h3s2q" path="res://SuperPixel-m2L8j.ttf" id="2_64lyc"]
+[ext_resource type="AudioStream" uid="uid://bxt8nbnjlcuvy" path="res://Another Background Music.wav" id="4_q73ve"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vv1r5"]
+bg_color = Color(0.219608, 0.219608, 0.219608, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_awnq4"]
+bg_color = Color(0.219608, 0.219608, 0.219608, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -13,26 +30,50 @@ offset_right = -1.0
 offset_bottom = 2.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_0sjwr")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Label" type="Label" parent="CanvasLayer"]
-offset_left = 225.0
-offset_top = 24.0
-offset_right = 887.0
-offset_bottom = 312.0
+offset_left = 19.0
+offset_top = 12.0
+offset_right = 556.0
+offset_bottom = 75.0
+theme_override_fonts/font = ExtResource("2_64lyc")
+theme_override_font_sizes/font_size = 64
 text = "RUN DUY RUN"
 horizontal_alignment = 1
 
 [node name="Button" type="Button" parent="CanvasLayer"]
-offset_left = 467.0
-offset_top = 295.0
-offset_right = 670.0
-offset_bottom = 386.0
+offset_left = 186.0
+offset_top = 95.0
+offset_right = 389.0
+offset_bottom = 186.0
+theme_override_fonts/font = ExtResource("2_64lyc")
+theme_override_font_sizes/font_size = 47
+theme_override_styles/normal = SubResource("StyleBoxFlat_vv1r5")
 text = "Play"
 
+[node name="Button2" type="Button" parent="CanvasLayer"]
+offset_left = 211.0
+offset_top = 208.0
+offset_right = 370.0
+offset_bottom = 251.0
+theme_override_fonts/font = ExtResource("2_64lyc")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_awnq4")
+text = "Credits"
+
 [node name="360F578354358JbJ0rJgIvLnwtVjz0DnQ4xFrkhQteqlH" type="Sprite2D" parent="."]
-z_index = -1
+z_index = -2
 position = Vector2(576.5, 324)
 scale = Vector2(1.82698, 1.81111)
 texture = ExtResource("1_tubi1")
+metadata/_edit_lock_ = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_q73ve")
+autoplay = true
+
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_start"]
+[connection signal="pressed" from="CanvasLayer/Button2" to="." method="_credits"]

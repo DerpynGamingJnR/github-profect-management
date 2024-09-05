@@ -1,0 +1,75 @@
+[gd_scene load_steps=5 format=3 uid="uid://rjoxqpqh74hj"]
+
+[ext_resource type="Script" path="res://credits.gd" id="1_6yru4"]
+[ext_resource type="FontFile" uid="uid://deldoj32h3s2q" path="res://SuperPixel-m2L8j.ttf" id="2_f4yxa"]
+[ext_resource type="Texture2D" uid="uid://bfd1g7qq8olbo" path="res://360_F_578354358_jbJ0RJgIvLNWTVjz0dnQ4xFRKHQteqlH.jpg" id="2_tqm22"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m8kcu"]
+bg_color = Color(0.219608, 0.219608, 0.219608, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6yru4")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_left = 182.0
+offset_top = 49.0
+offset_right = 912.0
+offset_bottom = 131.0
+theme_override_fonts/font = ExtResource("2_f4yxa")
+theme_override_font_sizes/font_size = 50
+text = "Credits"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="CanvasLayer"]
+offset_right = 138.0
+offset_bottom = 59.0
+theme_override_fonts/font = ExtResource("2_f4yxa")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_m8kcu")
+text = "Back"
+
+[node name="Label2" type="Label" parent="CanvasLayer"]
+offset_left = 19.0
+offset_top = 513.0
+offset_right = 1133.0
+offset_bottom = 553.0
+theme_override_fonts/font = ExtResource("2_f4yxa")
+theme_override_font_sizes/font_size = 15
+text = "
+https://stock.adobe.com/nz/search?k=pixel+snow (Used as the background for the game home screen)"
+
+[node name="Label3" type="Label" parent="CanvasLayer"]
+offset_left = 43.0
+offset_top = 560.0
+offset_right = 1104.0
+offset_bottom = 600.0
+theme_override_fonts/font = ExtResource("2_f4yxa")
+theme_override_font_sizes/font_size = 9
+text = "Sweet melody with a romantic chorus by AlmightyPsyche -- https://freesound.org/s/647032/ -- License: Attribution NonCommercial 4.0 (Used as game background)"
+
+[node name="Label4" type="Label" parent="CanvasLayer"]
+offset_left = 33.0
+offset_top = 589.0
+offset_right = 1107.0
+offset_bottom = 629.0
+theme_override_fonts/font = ExtResource("2_f4yxa")
+theme_override_font_sizes/font_size = 10
+text = "Winter Temple Summit2.wav by Xcreenplay -- https://freesound.org/s/678709/ -- License: Attribution NonCommercial 4.0 (Used as home screen music)"
+
+[node name="360F578354358JbJ0rJgIvLnwtVjz0DnQ4xFrkhQteqlH" type="Sprite2D" parent="."]
+position = Vector2(551, 341)
+texture = ExtResource("2_tqm22")
+
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_back"]

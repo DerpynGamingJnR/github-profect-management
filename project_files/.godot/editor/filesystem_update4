@@ -1,5 +1,5 @@
 res://start.tscn
-res://Player.gd
+res://credits.tscn
 res://level.tscn
 res://player_scene.tscn
 res://partner_scene.tscn
