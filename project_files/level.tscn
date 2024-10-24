@@ -553,5 +553,5 @@ scale = Vector2(4, 4)
 position = Vector2(-7806, 428)
 
 [node name="ObstacleSpawn22" type="Node2D" parent="." groups=["obstacle"]]
-position = Vector2(-9033, 424)
+position = Vector2(-9033, 428)
 scale = Vector2(4, 4)

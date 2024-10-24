@@ -1,5 +1,6 @@
 extends AnimatedSprite2D
 
+# Manage the animation of the heart part of the end cutscene.
 @export var current_anim = ""
 
 # Called when the node enters the scene tree for the first time.

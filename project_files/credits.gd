@@ -1,7 +1,7 @@
 extends Control
 
 
-# Called when the node enters the scene tree for the first time.
+# Allow the user to go back to the home screen upon pressing the Back button on the Credits page.
 
 
 
